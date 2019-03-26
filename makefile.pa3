@@ -1,0 +1,3 @@
+all:
+	#compile myshell
+	gcc version.c myshell.c -o myshell

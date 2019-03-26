@@ -1,0 +1,61 @@
+Script started on 2019-03-24 23:52:20-0500
+]0;onii-chan@eunjun-UX430UQ: ~/Documents/UNIX/PA3[01;32monii-chan@eunjun-UX430UQ[00m:[01;34m~/Documents/UNIX/PA3[00m$ gcc main.c -o PA03
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:27:27:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Kgetline[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+         getline(&command, [01;35m[K&[m[KcommandSize, stdin);
+                           [01;35m[K^[m[K
+In file included from [01m[Kmain.c:7:0[m[K:
+[01m[K/usr/include/stdio.h:616:20:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Ksize_t * restrict {aka long unsigned int * restrict}[m[K’ but argument is of type ‘[01m[Kint *[m[K’
+ extern _IO_ssize_t [01;36m[Kgetline[m[K (char **__restrict __lineptr,
+                    [01;36m[K^~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[KexecuteCommand[m[K’:
+[01m[Kmain.c:164:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kwaitpid[m[K’; did you mean ‘[01m[Kgetpid[m[K’? [[01;35m[K-Wimplicit-function-declaration[m[K]
+         [01;35m[Kwaitpid[m[K(pid);
+         [01;35m[K^~~~~~~[m[K
+         [32m[Kgetpid[m[K
+]0;onii-chan@eunjun-UX430UQ: ~/Documents/UNIX/PA3[01;32monii-chan@eunjun-UX430UQ[00m:[01;34m~/Documents/UNIX/PA3[00m$ ./PA03
+Enter command: l ls -l
+total 60
+drwxr-xr-x 3 eunjun eunjun  4096 Mar 24 22:17 bin
+-rw-r--r-- 1 eunjun eunjun  4152 Mar 24 23:51 main.c
+drwxr-xr-x 3 eunjun eunjun  4096 Mar 24 22:17 obj
+-rwxrwxr-x 1 eunjun eunjun 13264 Mar 24 23:52 PA03
+-rw-rw-r-- 1 eunjun eunjun     0 Mar 24 23:52 PA03.scriptout
+-rw-rw-r-- 1 eunjun eunjun 12667 Mar 24 21:39 PA03word.odt
+-rw-rw-r-- 1 eunjun eunjun  1048 Mar 23 18:35 PA3.cbp
+-rw-rw-r-- 1 eunjun eunjun   171 Mar 24 23:50 PA3.depend
+-rw-rw-r-- 1 eunjun eunjun   358 Mar 24 23:23 PA3.layout
+Enter command: clear; ls -l
+[3J[H[2Jtotal 60
+drwxr-xr-x 3 eunjun eunjun  4096 Mar 24 22:17 bin
+-rw-r--r-- 1 eunjun eunjun  4152 Mar 24 23:51 main.c
+drwxr-xr-x 3 eunjun eunjun  4096 Mar 24 22:17 obj
+-rwxrwxr-x 1 eunjun eunjun 13264 Mar 24 23:52 PA03
+-rw-rw-r-- 1 eunjun eunjun     0 Mar 24 23:52 PA03.scriptout
+-rw-rw-r-- 1 eunjun eunjun 12667 Mar 24 21:39 PA03word.odt
+-rw-rw-r-- 1 eunjun eunjun  1048 Mar 23 18:35 PA3.cbp
+-rw-rw-r-- 1 eunjun eunjun   171 Mar 24 23:50 PA3.depend
+-rw-rw-r-- 1 eunjun eunjun   358 Mar 24 23:23 PA3.layout
+Enter command: ls | grep "^d" | wc -l
+0
+Enter command: ls > textfile
+Enter command: ca  t te	xtfile
+cat: '': No such file or directory
+Enter command: cat < textfile
+bin
+main.c
+obj
+PA03
+PA03.scriptout
+PA03word.odt
+PA3.cbp
+PA3.depend
+PA3.layout
+textfile
+Enter command: exit
+Enter command: exit
+Enter command: ^C
+]0;onii-chan@eunjun-UX430UQ: ~/Documents/UNIX/PA3[01;32monii-chan@eunjun-UX430UQ[00m:[01;34m~/Documents/UNIX/PA3[00m$ exit
+exit
+
+Script done on 2019-03-24 23:53:59-0500

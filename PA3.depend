@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1553489432 source:/home/eunjun/Documents/UNIX/PA3/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<fcntl.h>
+	<ctype.h>
+	<unistd.h>
+
